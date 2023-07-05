@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    height: 1000px;
+    scroll-behavior: smooth;
+}
+
+/*General Use*/
+.title {
+    font-size: xx-large;
+}
+.subtitle {
+    font-size: medium;
+}
+.left-text {
+    text-align: left;
+}
+.center-text {
+    text-align: center;
+}
+.right-text {
+    text-align: right;
+}
+.page {
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-wrapper-body {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 50px lightgrey;
+}
+
+
+/*Semi-General Use*/
+.top-section-button {
+    background-color: transparent;
+    height: 100%;
+    flex-grow: 1;
+    border: 0;
+    box-shadow: 0 0 0px lightgrey;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.top-section-button:hover {
+    box-shadow: 0 0 25px lightgrey;
+    cursor: pointer;
+}
+
+
+/*Specifics*/
+#top-section {
+    background-color: white;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0 0 50px lightgrey;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    transform: translateY(0%);
+    z-index: 2;
+    transition: 0.5s;
+}
+#top-section-spacer {
+    background-color: blue;
+    width: 100%;
+    height: calc(10vh + 10px);
+    transform: translateY(0%);
+    transition: 0.5s;
+}
+.top-section-section {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    align-items: center;
+}
+.top-section-section.section1, .top-section-section.section3 {
+    width: 27%;
+    height: 100%;
+    position: relative;
+}
+.top-section-section.section2 {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 50px lightgrey;
+}
+.top-section-search {
+    background-color: transparent;
+    width: 80%;
+    height: 100%;
+    text-indent: 5px;
+    border: none;
+    text-align: center;
+    box-shadow: 0 0 0 grey;
+    transition: 0.5s ease;
+}
+.top-section-search:focus {
+    outline: none;
+}
+#top-section-search-results {
+    background-color: white;
+    height: 0vh;
+    position: absolute;
+    top: 10vh;
+    box-shadow: 0 0 50px lightgrey;
+    transition: 0.5s;
+}
+/*Custom*/
